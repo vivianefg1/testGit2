@@ -1,0 +1,33 @@
+Trabalhando com Operadores
+
+use database hospital;
+
+Select * from paciente
+where idade <=12;
+
+Select nome as 'Paciente', status 
+where idade <=12 and status = 'emergência' 
+
+
+Select nome as 'Paciente', status 
+where idade <=12 or idade >=65 and status = 'emergência' 
+
+Select nome as 'Paciente', status 
+where (idade <=12 or idade >=65) and status = 'emergência';
+
+
+
+use database escola;
+
+Select * from curso
+where categoria='tecnologia';
+
+Select nome as 'curso', categoria 
+from curso
+where categoria ='tecnologia' or categoria='idiomas'; 
+
+
+
+
+
+
