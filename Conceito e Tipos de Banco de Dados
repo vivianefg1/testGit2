@@ -1,0 +1,31 @@
+Olá, seja bem vindo por aqui! 
+Neste módulo eu explicarei a você sobre os conceitos de banco de dados.
+
+Entenda  banco de dados como o local que você irá armazenar as informações de forma organizada,  onde você terá uma coleção de dados que poderão ser relacionados ou não e que irá representar uma informação. 
+
+Você poderia pensar por exemplo que a maneira organizada das informações seria digitá-las em um aplicativo de texto por exemplo,  mas imagina você procurar aquelas informações no meio de um texto com mais de 10 mil linhas.  Talvez  daria um pouco de problema um pouco de trabalho ou sería uma missão quase impossível, não é mesmo?
+
+Quando você tem os dados organizados de maneira estruturada e associada, a leitura deles para uma pesquisa e tomada de decisão poderá ser mais fácil rápida. 
+Imagine por exemplo como seria o sistema de cadastro de saúde da população brasileira onde nós temos os dados pessoais das pessoas (nome, RG, Idade), localidade em que vivem, entre outros. 
+
+Nós temos desde a informação por cidade e podemos chegar a dados glanurares e detalhados como o nome do bairro, rua. Podemos ter a informação se a pessoa possui dependentes, entre outros. 
+
+Se tudo isso for “jogado” de qualquer forma de maneira desorganizada e desestruturada, poderá ficar trabalhosa a maneira de consultar estes dados. 
+Para que tenhamos uma organização e performance em obter respostas rápidas, criamos um Banco de Dados, que será o local em que estes dados serão armazenados de maneira organizada. 
+
+Para isso nós utilizamos um Sistema Gerenciador de Banco de Dados conhecido também com o SGBD. 
+
+Esse sistema é um software que possui recursos recursos capaz de manipular todas as informações de um banco de dados e prover resposta e interação com usuário. 
+
+Podemos falar ainda que o sistema de banco de dados sistema gerenciador de banco de dados é um conjunto com alguns componentes básicos são os dados,  o software que você vai utilizar e o hardware, que é o seu o seu equipamento. 
+
+A partir da interação com usuário, podemos associar o sistema gerenciador de banco de dados como uma grande biblioteca, onde você poderá ter acesso aos seus dados de maneira rápida e organizada. 
+
+Temos como alguns exemplos de sistema gerenciador de banco de dados: Oracle, SQL, DB2, MySQL, Postgree. 
+
+Neste curso de Introdução a Banco de Dados, o sistema que nós utilizaremos como apoio ao seu aprendizado será o MySQL. 
+
+Nesta aula expliquei sobre o conceito de banco de dados e quais são os tipos. 
+
+Eu espero você na próxima aula onde falaremos da estrutura de um banco de dados. 
+Muito obrigado pela sua atenção e até lá!! 
