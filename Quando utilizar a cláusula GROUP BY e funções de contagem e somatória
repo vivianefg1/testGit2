@@ -1,0 +1,36 @@
+
+use dbpaciente;
+SELECT status, count(*) 
+from paciente
+group by status;
+
+SELECT status, count(*) 
+from paciente
+where status = 'emergência' and idade >=65 
+group by status; 
+
+use dbfuncionario;
+
+SELECT COUNT(*) 
+FROM funcionario;
+
+SELECT COUNT(*) 
+FROM funcionario
+WHERE salario >=2000;
+
+SELECT Cod_Depto,COUNT(*) AS 'Quantidade'
+FROM funcionario
+WHERE salario >=2000
+GROUP BY Cod_Depto;
+
+SELECT Cod_Depto,SUM(salario) AS 'Valor Total'
+FROM funcionario
+WHERE salario >=2000
+GROUP BY Cod_Depto;
+
+
+SELECT Cod_Depto,SUM(salario) AS 'Valor Total'
+FROM funcionario
+WHERE salario >=2000
+GROUP BY Cod_Depto
+order by sum(salario) DESC;
