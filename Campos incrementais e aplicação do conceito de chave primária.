@@ -1,0 +1,11 @@
+CREATE TABLE alunos(
+codigo int(4) AUTO_INCREMENT,
+nome varchar(40) NOT NULL,
+email varchar(50),
+nascimento date, 
+PRIMARY KEY (codigo)
+);
+
+INSERT INTO alunos(codigo, nome, email) VALUES (null, “Viviane Martins”, “viviane@teste.com.br”) ;
+INSERT INTO alunos(codigo, nome, email) VALUES (null, “João Paulo”, “joao@hotmail.com”) ;
+INSERT INTO alunos(codigo, nome, email) VALUES (null, “Carlos Souza”, “csouza@gmail.com”) ;
