@@ -1,0 +1,9 @@
+CREATE DATABASE alunos;
+
+USE alunos;
+
+CREATE TABLE exemplo(
+nome varchar(40) NOT NULL,
+email varchar(50),
+nascimento date
+);
