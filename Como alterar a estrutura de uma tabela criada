@@ -1,0 +1,15 @@
+- Adicionar campos: 
+ALTER TABLE exemplo
+ADD  codigo int(4) AUTO_INCREMENT;
+
+- Adicionar chave primária: 
+ALTER TABLE exemplo
+ADD PRIMARY KEY (codigo);
+
+- Alterar colunas, alterando o tipo de dados: 
+ALTER TABLE exemplo
+MODIFY COLUMN nascimento time;
+
+- Excluir uma chave primária: 
+ALTER TABLE exemplo
+DROP PRIMARY KEY;
