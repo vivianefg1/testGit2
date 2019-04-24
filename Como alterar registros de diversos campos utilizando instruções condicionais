@@ -4,6 +4,11 @@ SET <campo1>= <valor>,
     ...
 [WHERE <condicao>];
 
+UPDATE paciente
+SET status= 'Urgência'
+where condicao = 'urgencia;
+
+
 
 UPDATE <tabela>
 SET <campo1> = (SELECT <campo>
