@@ -1,0 +1,46 @@
+
+
+SELECT <campos>
+FROM <tabela>
+[ WHERE <condição>]
+[ GROUP BY <expressão de agrupamento>]
+
+
+Functions: 
+
+MIN
+MAX
+AVG
+SUM
+COUNT
+
+use dbfuncionario;
+
+SELECT COUNT(*) FROM funcionario;
+
+
+SELECT Cod_Depto, MAX(salario) AS 'Top Salários'
+FROM funcionario
+GROUP BY Cod_Depto;
+
+SELECT Cod_Depto, MIN(salario) AS 'Top Salários'
+FROM funcionario
+GROUP BY Cod_Depto;
+
+
+SELECT Cod_Depto, AVG(salario) AS 'Top Salários'
+FROM funcionario
+GROUP BY Cod_Depto;
+
+SELECT Cod_Depto, AVG(salario) AS 'Média de Salários''
+FROM funcionario
+GROUP BY Cod_Depto
+WHERE localidade = 'SP' or localidade = 'RJ'
+order by Cod_depto; 
+
+
+SELECT Cod_Depto AS 'Departamento', AVG(salario) AS 'Média de Salários'
+FROM funcionario
+GROUP BY Cod_Depto
+WHERE localidade = 'SP' or localidade = 'RJ'
+order by AVG(salario) DESC; 
