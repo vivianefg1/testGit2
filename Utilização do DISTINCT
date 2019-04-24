@@ -1,0 +1,24 @@
+use dbpaciente;
+
+SELECT DISTINCT status
+FROM paciente;
+
+SELECT DISTINCT status, ocorrencia 
+FROM paciente;
+
+SELECT DISTINCT status, ocorrencia
+FROM paciente
+where ocorrencia not like '%dor%'; 
+
+SELECT DISTINCT * 
+from paciente; 
+
+use dbfuncionario;
+SELECT DISTINCT Cod_Depto
+from funcionario; 
+
+SELECT DISTINCT Salario
+from funcionario; 
+
+SELECT DISTINCT Cod_Localidade
+from funcionario; 
