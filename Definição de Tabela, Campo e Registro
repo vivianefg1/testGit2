@@ -1,0 +1,28 @@
+Bem-vindo a segunda aula deste módulo,  onde irei explicar a você sobre definições de alguns conceitos de tabela , campo e registro. 
+
+Podemos entender que a Tabela é um conjunto de dados que ees estão dispostos em linhas infinitas e separado por colunas que organizam as as categorias desses dados. 
+
+Por exemplo,  aqui nós temos uma tabela de pacientes onde cada linha  representa um dado de um paciente que passou no hospital. 
+
+Nós temos o nome do paciente, a sua idade, o status de como ele chegou no hospital,  se foi por uma dor se foi por um outro problema de saúde. 
+Cada linha desta tabela, representa uma informação de um paciente. Cada linha desta tabela, nós chamamos de registro, ok? 
+
+Então, Registro é representa uma linha inteira de uma tabela. 
+
+Temos neste caso, seis registros cadastrados!
+
+Nas colunas nós observamos que estão separados e categorizadas os itens por tipo de dado. 
+
+Você tem uma coluna que vai mostrar somente o nome da pessoa,  você tem uma coluna que vai mostrar somente a idade, uma outra coluna que irá mostrar apenas um status de como ele chegou no hospital, e assim por diante. 
+
+Cada uma destas colunas categorizadas nós chamamos de Campos. 
+
+Temos então x campos neste exemplo! 
+
+Um campo representa cada coluna de uma tabela e o registro representa cada linha de uma tabela. 
+
+Aprendemos aqui nesta aula sobre os conceitos de tabela, registro e campos. 
+
+Muito obrigada por sua presença! Estou muito feliz por ter você aqui! 
+
+Te espero na próxima aula, onde vou te ensinar sobre os tipos de dados e o campo indexador. 
