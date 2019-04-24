@@ -1,0 +1,23 @@
+SELECT <campos>
+FROM <tabela>
+[ WHERE <condição>]
+[ GROUP BY <expressão de agrupamento>]
+[ HAVING <condição>]
+
+use dbpaciente; 
+
+Select Status,Count(*) as 'Quantidade' 
+From Dados
+Group by Atendimento
+Having Count(*) > 20 
+
+
+use dbfuncionario; 
+
+SELECT Cod_Depto,SUM(salario) AS 'Valor Total'
+FROM funcionario
+WHERE salario >=2000
+GROUP BY Cod_Depto
+Having Sum(Salario) > 30000 
+
+
