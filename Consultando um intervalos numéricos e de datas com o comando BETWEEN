@@ -1,0 +1,21 @@
+BETWEEN e NOT 
+
+expression BETWEEN <valor_min> AND <valor_max>
+
+use database paciente; 
+
+SELECT nome, genero, idade, status 
+FROM paciente
+WHERE ano(nascimento)>= 2000 and ano(nascimento)<=2010;
+
+SELECT nome, genero, idade status 
+FROM paciente
+WHERE ano(nascimento)  BETWEEN 2000 AND 2010;
+
+SELECT nome, genero, idade, status 
+FROM paciente
+WHERE ano(nascimento)  NOT BETWEEN 2000 AND 2010;
+
+SELECT *
+FROM paciente 
+WHERE nascimento BETWEEN CAST('2010-01-01' AS DATE) AND CAST('2018-01-01' AS DATE);
