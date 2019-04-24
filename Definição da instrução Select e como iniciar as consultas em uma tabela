@@ -1,0 +1,20 @@
+Consultar todos os campos e todos os registros: 
+Select * from <nome_tabela>
+
+Consultando alguns registros:
+Select <campo1>, <campo2>, <campo3> 
+from <nome_tabela>
+
+Select * from funcionario;
+
+Select * from aluno;
+
+Select Nome from aluno;
+
+Select * from curso;
+
+Select curso from curso;
+
+Select * from paciente;
+
+Select nome, idade, status from paciente;
