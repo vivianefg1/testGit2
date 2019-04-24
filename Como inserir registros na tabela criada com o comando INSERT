@@ -1,0 +1,3 @@
+INSERT INTO alunos(codigo, nome, email) VALUES (null, “Viviane Martins”, “viviane@teste.com.br”) ;
+INSERT INTO alunos(codigo, nome, email) VALUES (null, “João Paulo”, “joao@hotmail.com”) ;
+INSERT INTO alunos(codigo, nome, email) VALUES (null, “Carlos Souza”, “csouza@gmail.com”) ;
