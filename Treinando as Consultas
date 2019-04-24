@@ -1,0 +1,196 @@
+1. Exibir nome, email e salario dos funcionarios
+
+select nome_func,email,salario 
+from funcionario
+
+
+2. Exibir todos os campos
+
+select * 
+from funcionario
+
+
+3. Exibir nome dos funcionarios onde o salario seja superior
+a 3000 
+
+	select nome_func 
+	from funcionario
+	where salario > 3000
+
+
+4. Exibir funcionarios que morem na localização 7 e tenham 
+o salario inferior a 2000 
+
+	select nome_func,id_localidade,salario
+	from funcionario
+	where id_localidade=7 and salario < 2000
+
+
+5. Exibir todos os funcionarios que morem na localizacao 7
+e tambem os funcionarios que tenham o salario superior a 
+4000 de qualquer localidade
+
+	select nome_func,id_localidade,salario
+	from funcionario
+	where id_localidade=7 OR salario > 4000
+
+6. Exibir todos os funcionarios que tenham o salario maior que
+4000 e que morem na localidade 7, além dos funcionarios que
+tenham o cargo 11. 
+
+	select nome_func,id_localidade,salario,id_cargo
+	from funcionario
+	where salario>4000 AND id_localidade=7 OR id_cargo=11 
+
+
+	select nome_func,id_localidade,salario,id_cargo
+	from funcionario
+	where id_cargo = 11 or salario>4000 AND id_localidade=7 
+
+	Utilizar parênteses para realizar a procedência dos operadores: 
+	select nome_func,id_localidade,salario,id_cargo
+	from funcionario
+	where (id_cargo = 3 or salario>4000)  AND id_localidade=7 
+
+
+7. Trazer funcionarios com salario entre 3000 e 5000 
+
+	select nome_func,salario
+	from funcionario
+	where salario>=3000 AND salario <=5000
+
+	select nome_func,salario 
+	from funcionario
+	where salario between 3000 AND 5000 
+
+8. Trazer todos os funcionários que não tenham salario entre
+3000 e 5000
+
+	select nome_func,salario
+	from funcionario
+	where salario <3000 or salario > 5000
+
+	select nome_func,salario
+	from funcionario
+	where salario not between 3000 AND 5000
+
+9. Trazer todos os funcionarios cujo nome inicia com a letra A 
+
+	select nome_func
+	from funcionario
+	where nome_func like 'a%'
+
+
+10. Trazer os funcionarios onde o último nome seja silva
+
+        select nome_func
+	from funcionario	
+	where nome_func like '%silva' 
+
+11. Trazer os funcionarios que tenha o sobrenome silva. 
+
+	select nome_func
+	from funcionario
+	where nome_func like '%silva%' 
+
+	select nome_func
+	from funcionario
+	where nome_func like '%silva%' 
+
+	águas de lindoia
+	águas de lindóia
+	águas de lindoya
+	águas de são pedro 
+
+select cidade
+from cidades
+where cidade like 'água%' and cidade not like '%são pedro%'
+
+
+12. Trazer os funcionarios que morem nas localidades 7, 
+1, 3 ou 5. 
+
+	select nome_func,id_localidade
+	from funcionario
+	where id_localidade=7 OR id_localidade=1 
+	OR id_localidade =3 OR id_localidade=5
+
+	select nome_func,id_localidade
+	from funcionario
+	where id_localidade IN (7,1,3,5)
+
+13. Exibir listagem de funcionarios em ordem alfabética
+	
+	select nome_func 
+	from funcionario
+	order by nome_func 
+
+	select nome_func
+	from funcionario
+	order by nome_func ASC 
+
+	select nome_func,salario
+	from funcionario
+	order by 1
+	
+14. Exibir cargos em ordem crescente e salario em ordem decrescente
+
+	select id_cargo,nome_func,salario
+	from funcionario
+	order by 1,3 desc
+
+15. Exibir os 10 funcionarios que possuem os  maiores salarios
+
+	select  TOP 10 nome_func,salario
+	from funcionario
+	order by 2 DESC 
+
+16. Exibir 10% dos registros iniciais dos funcionarios 
+onde o nome inicia com a letra A 
+
+	select TOP 10 Percent nome_func 
+	from funcionario
+	where nome_func like 'A%'
+	order by salario desc 
+
+17. Exibir funcionarios que morem na localidade 7 
+
+	select id_localidade,nome_func
+	from funcionario
+	where localidade=7
+
+
+18. Calcular qtde de funcionarios por localidade
+
+select id_localidade as [Cidade],count(*) as [Qtde Funcionários]
+from funcionario 
+group by id_localidade 	
+
+Obs.: Para criar um ALIAS (apelido)
+
+	<nome do campo> as [nome do apelido]
+
+
+19. Trazer a media de salario dos funcionarios por localidade
+
+	select id_localidade,avg(salario) as [Salário Médio]
+	from funcionario
+	group by id_localidade
+
+20. Trazer a media de salario dos funcionarios por localidade, 
+onde o resultado seja superior a 2000 
+	
+	select id_localidade,avg(salario) as [Salário Médio]
+	from funcionario
+	group by id_localidade
+	having avg(salario) > 2000
+
+
+21. Trazer a media de salario dos funcionarios por localidade
+(exceto a localidade 3), onde o resultado seja superior a 2000 
+
+	select id_localidade,avg(salario) as [Salário Médio]
+	from funcionario
+	where id_localidade <> 3
+	group by id_localidade
+	having avg(salario) > 2000
