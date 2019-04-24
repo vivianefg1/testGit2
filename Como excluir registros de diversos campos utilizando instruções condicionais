@@ -1,0 +1,22 @@
+
+DELETE FROM contacts
+WHERE last_name = 'Johnson'
+ORDER BY contact_id DESC
+LIMIT 1;
+
+DELETE FROM contacts
+WHERE last_name = 'Johnson'
+ORDER BY contact_id ASC
+LIMIT 1;
+
+
+Utilizando sub-query para deletar registros
+
+
+DELETE FROM funcionario
+WHERE EXISTS
+  ( SELECT *
+    FROM dependente
+    WHERE dependente.cod = funcionario.cod);
+
+
