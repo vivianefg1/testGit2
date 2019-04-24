@@ -1,0 +1,23 @@
+UPDATE <tabela>
+SET <campo1>= <valor>,
+    <campo2> = <valor,
+    ...
+[WHERE <condicao>];
+
+
+UPDATE <tabela>
+SET <campo1> = (SELECT <campo>
+               FROM <tabela2>
+               WHERE <condicao)
+[WHERE <condicao>];
+
+
+UPDATE table1, table2, ... 
+SET column1 = expression1,
+    column2 = expression2,
+    ...
+WHERE table1.column = table2.column
+AND conditions;
+
+
+
