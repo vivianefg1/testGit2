@@ -1,0 +1,42 @@
+
+Select * from aluno
+where cidade = 'São Paulo';
+
+
+
+SELECT <campo1>, <campo2>, <campo_n>
+FROM <tabela>
+[ WHERE <condição>]
+
+Select nome, cidade 
+from aluno
+where cidade ='São Paulo';
+
+Select nome
+from aluno 
+where cidade = 'São Paulo';
+
+Select * from Paciente 
+where idade = 10; 
+
+
+SELECT <campo1>, <campo2>, <campo_n>
+FROM <tabela>
+[ WHERE <condição>]
+[ ORDER BY <campo>  ASC | DESC ] ]
+
+Select nome, cidade 
+from aluno
+where cidade ='São Paulo'
+order by nome ASC;
+
+
+SELECT <campo1> as <apelido>, <campo2> as <apelido>, <campo_n> as <apelido>
+FROM <tabela>
+[ WHERE <condição>]
+[ ORDER BY <campo>  ASC | DESC ] ]
+
+Select nome as 'Nome do Aluno', cidade as 'Localidade' 
+from aluno
+where cidade ='São Paulo'
+order by nome ASC;
