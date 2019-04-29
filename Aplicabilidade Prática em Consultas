@@ -1,1 +1,20 @@
 
+use dbfuncionario;
+
+select * From localidade;
+
+select * from funcionario;
+
+select * from departamento;
+
+select cod_localidade, funcionario
+from funcionario 
+where cod_localidade=3;
+
+select cod_localidade, count(*) 
+from funcionario
+group by cod_localidade;
+
+*** Inserir registros novos em ambas as tabelas e efetuar as mesmas consultas na sequência   
+    Preparando o aluno para a próxima aula. 
+
