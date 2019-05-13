@@ -1,23 +1,24 @@
-SELECT <campos>
-FROM <tabela>
-[ WHERE <condição>]
-[ GROUP BY <expressão de agrupamento>]
-[ HAVING <condição>]
 
-use dbpaciente; 
+Select cat_curso,count(*) as Quantidade from curso_teste
+group by cat_curso
+having count(*) <10;
 
-Select Status,Count(*) as 'Quantidade' 
-From Dados
-Group by Atendimento
-Having Count(*) > 20 
+Select cat_curso,count(*) as Quantidade from curso_teste
+where cat_curso <> 'administração'
+group by cat_curso
+having count(*) <10;
 
 
-use dbfuncionario; 
+Select cat_curso,sum(ch_curso) as Quantidade 
+from curso_teste
 
-SELECT Cod_Depto,SUM(salario) AS 'Valor Total'
-FROM funcionario
-WHERE salario >=2000
-GROUP BY Cod_Depto
-Having Sum(Salario) > 30000 
+group by cat_curso
+
+having sum(ch_curso)<=40;
+
+Select cat_curso,sum(ch_curso) as Quantidade from curso_teste
+where nome_curso = 'espanhol' or nome_curso = 'ingles'
+group by cat_curso
+having sum(ch_curso)<=40;
 
 
