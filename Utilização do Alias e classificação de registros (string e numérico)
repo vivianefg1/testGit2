@@ -1,38 +1,87 @@
-Consulta em ordem de classificação e alias:
+select * from curso_teste;
 
-Select <campo1> as <apelido>, <campo2> as <apelido> 
-From <nome_tabela>
-Order by <nome_campo> [ASC | DESC]
 
-Select Nome as 'Participante' 
-from aluno;
 
-Select Nome as 'Participante' 
-from aluno;
+select nome_curso AS 'Nome do Curso' 
 
-Select Nome as 'Paciente', idade_Pac as 'idade, status as 'Situação'
-from paciente;
+from curso_teste;
 
-Select Nome as 'Participante' 
-from aluno
-order by nome;
 
-Select Nome, idade_Pac, status
-from paciente
-order by status;
 
-Select Nome, idade_Pac, status
-from paciente
-order by 3;
+select nome_curso as Curso, ch_curso as 'Carga Horária'
 
-Select Nome, idade_Pac, status
-from paciente
-order by status,nome;
+from curso_teste;
 
-Select Nome, idade_Pac, status
-from paciente
-order by 3,1;
 
-Select Nome as 'Paciente', idade_Pac as 'Idade', status as 'Situação'
-from paciente
-order by Paciente, Idade
+
+select nome_curso as 'Nome do Curso' 
+
+from curso_teste
+
+order by nome_curso;
+
+
+
+select nome_curso as 'Nome do Curso' 
+
+from curso_teste
+order by 1;
+
+
+
+select nome_curso as Curso, ch_curso as 'Carga Horária'
+from curso_teste
+order by 2 ASC;
+
+
+
+select nome_curso as Curso, ch_curso as 'Carga Horária' 
+from curso_teste
+
+order by ch_curso ASC;
+
+
+
+select nome_curso as Curso, ch_curso as 'Carga Horária'
+
+from curso_teste
+order by nome_curso;
+
+
+
+
+select * from curso_teste;
+
+
+
+select cat_curso,nome_curso
+from curso_teste;
+
+
+
+select cat_curso,nome_curso
+
+from curso_teste
+
+order by 1, 2;
+
+
+
+select cat_curso,nome_curso
+
+from curso_teste
+order by 1, 2 desc;
+
+
+
+select * from curso_teste;
+
+
+
+select ch_curso As 'Carga Horária', nome_curso as Curso
+
+from curso_teste
+
+order by ch_curso desc;
+
+
