@@ -12,3 +12,58 @@ from localidade
 inner join funcionario
 on localidade.id_local = funcionario.id_localidade
 group by id_localidade;
+
+
+select id_func,count(*)
+from funcionario
+inner join dependente
+on funcionario.id_func = dependente.cod_func
+group by id_func;
+
+
+
+select nome_func,count(*)
+from funcionario
+inner join dependente
+on funcionario.id_func = dependente.cod_func
+group by nome_func;
+
+
+select nome_func as 'Nome do Funcionário',count(*) as 'Quantidade de Dependentes'
+from funcionario
+inner join dependente
+on funcionario.id_func = dependente.cod_func
+group by nome_func;
+
+select nome_func as 'Nome do Funcionário',count(*) as 'Quantidade de Dependentes'
+from funcionario
+inner join dependente
+on funcionario.id_func = dependente.cod_func
+group by nome_func
+order by 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
