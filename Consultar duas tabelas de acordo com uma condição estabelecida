@@ -1,14 +1,33 @@
+select * from dependente
 
-SELECT FUNCIONARIO.NOME_FUNC, LOCALIDADE.CIDADE, LOCALIDADE.UF
-FROM LOCALIDADE RIGHT JOIN FUNCIONARIO ON LOCALIDADE.ID_LOCAL = FUNCIONARIO.ID_LOCAL
-WHERE LOCALIDADE.UF="SP";
+inner join funcionario
 
-
-SELECT FUNCIONARIO.NOME_FUNC, LOCALIDADE.CIDADE, LOCALIDADE.UF
-FROM LOCALIDADE RIGHT JOIN FUNCIONARIO ON LOCALIDADE.ID_LOCAL = FUNCIONARIO.ID_LOCAL
-WHERE LOCALIDADE.UF='SP' OR LOCALIDADE.UF='RJ';
+on dependente.cod_func = funcionario.id_func
+where status_dep = 'filho';
 
 
-SELECT FUNCIONARIO.NOME_FUNC, LOCALIDADE.CIDADE, LOCALIDADE.UF
-FROM LOCALIDADE RIGHT JOIN FUNCIONARIO ON LOCALIDADE.ID_LOCAL = FUNCIONARIO.ID_LOCAL
-WHERE LOCALIDADE.UF <> 'SÃO PAULO';
+select nome_func from dependente
+
+inner join funcionario
+
+on dependente.cod_func = funcionario.id_func
+where status_dep = 'conjuge';
+
+
+select nome_func,nome_dep from dependente
+
+inner join funcionario
+
+on dependente.cod_func = funcionario.id_func
+where status_dep = 'esposa';
+
+
+
+select * from dependente
+
+inner join funcionario
+
+on dependente.cod_func = funcionario.id_func
+inner join localidade
+on localidade.id_local = funcionario.id_localidade;
+
