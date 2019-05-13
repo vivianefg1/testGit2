@@ -1,20 +1,34 @@
-Consultar todos os campos e todos os registros: 
-Select * from <nome_tabela>
+Adicionados os registros na tabela Curso_teste
 
-Consultando alguns registros:
-Select <campo1>, <campo2>, <campo3> 
-from <nome_tabela>
+insert into curso_teste
+values
+(4,'Finanças Pessoais','Administração',10),
+(5,'Inbound Marketing','Marketing',5),
+(6,'Espanhol','Idiomas',4),
+(7,'Email Marketing','Marketing',8),
+(8,'Programação Estruturada','Tecnologia',15),
+(9,'Engenharia de Software','Tecnologia',10),
+(10,'VBA','Tecnologia',3),
+(11,'Arquitetura de Software','Tecnologia',5),
+(12,'Adobe XD','Tecnologia',4),
+(13,'React','Tecnologia',12),
+(14,'Website','Tecnologia',10),
+(15,'Planejamento de Compras','Administração',15),
+(16,'Frances','Idiomas',8),
+(17,'Gestão De Marketing','Marketing',7),
+(18,'Javascript','Tecnologia',4);
 
-Select * from funcionario;
 
-Select * from aluno;
+Selecionar todos os Campos
 
-Select Nome from aluno;
+Select * from curso_teste;
 
-Select * from curso;
 
-Select curso from curso;
+Selecionar um tipo de campo
 
-Select * from paciente;
+Select nome_curso from curso_teste;
 
-Select nome, idade, status from paciente;
+Selecionar o nome de alguns campos
+
+select nome_curso, ch_curso from curso_teste;
+
