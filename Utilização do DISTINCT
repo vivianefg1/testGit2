@@ -1,24 +1,11 @@
-use dbpaciente;
 
-SELECT DISTINCT status
-FROM paciente;
+select distinct * from curso_teste;
 
-SELECT DISTINCT status, ocorrencia 
-FROM paciente;
 
-SELECT DISTINCT status, ocorrencia
-FROM paciente
-where ocorrencia not like '%dor%'; 
 
-SELECT DISTINCT * 
-from paciente; 
+select distinct cat_curso 
+from curso_teste;
 
-use dbfuncionario;
-SELECT DISTINCT Cod_Depto
-from funcionario; 
-
-SELECT DISTINCT Salario
-from funcionario; 
-
-SELECT DISTINCT Cod_Localidade
-from funcionario; 
+select distinct cat_curso 
+from curso_teste
+where cat_curso<>'marketing';
