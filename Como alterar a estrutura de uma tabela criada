@@ -1,3 +1,52 @@
+Como alterar a estrutura da tabela criada
+
+describe curso_teste;
+describe aluno_teste;
+
+--> Acessar o terminal do MySQL:
+
+show databases;
+use alunos;
+show tables;
+describe curso_teste;
+describe aluno_teste;
+status;
+
+
+
+describe curso_teste;
+describe aluno_teste;
+
+status;
+
+show tables;
+
+
+
+describe <nome da tabela>;
+
+describe curso_teste;
+describe aluno_teste;
+
+Adicionar campos:
+alter table curso_teste
+ADD valor_curso int;
+
+Alterar um tipo de campo criado:
+alter table curso_teste
+MODIFY COLUMN valor_curso decimal(10,2);
+
+describe curso_teste;
+
+Encerrar o Terminal do MySQL: 
+
+exit;
+
+
+
+
+######### Demais Códigos que poderão ser utilizados #########
+
 - Adicionar campos: 
 ALTER TABLE exemplo
 ADD  codigo int(4) AUTO_INCREMENT;
