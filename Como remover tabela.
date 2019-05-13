@@ -1,4 +1,18 @@
+Remover uma tabela do banco de dados
+
+DROP TABLE <nome_da_Tabela>
+
+use cadastro;
+
+
+
+drop table curso_teste;
+
+
+Como remover dados de uma tabela:
+
+
+use cadastro;
 
 TRUNCATE TABLE alunos;
 
-DROP TABLE exemplo;
