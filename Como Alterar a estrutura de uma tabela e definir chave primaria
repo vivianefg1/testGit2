@@ -1,0 +1,42 @@
+
+Adicionar campos:
+alter table aluno_teste
+ADD cod_aluno int(4);
+
+alter table aluno_teste
+ADD Status_Aluno varchar(30);
+
+alter table aluno_teste
+
+add primary key (cod_aluno);
+
+describe aluno_teste;
+
+alter table aluno_teste
+ADD PRIMARY KEY (cod_aluno);
+
+remover uma chave primária
+alter table aluno_teste
+DROP PRIMARY KEY;
+
+Modificar a ordem de um campo em uma tabela
+
+alter aluno_teste
+MODIFY COLUMN cod_aluno int(4)
+FIRST;
+
+
+alter table aluno_teste
+
+add primary key (cod_aluno);
+
+alterar a ordem de um campo na tabela  (entre)
+
+alter table aluno_teste
+MODIFY COLUMN nascimento date
+after email;
+
+Renomear o nome de campos:
+alter table aluno_teste
+
+RENAME COLUMN nome to nome_aluno;
