@@ -14,33 +14,54 @@ AVG
 SUM
 COUNT
 
-use dbfuncionario;
-
-SELECT COUNT(*) FROM funcionario;
 
 
-SELECT Cod_Depto, MAX(salario) AS 'Top Salários'
-FROM funcionario
-GROUP BY Cod_Depto;
+Selecionar um tipo de campo
 
-SELECT Cod_Depto, MIN(salario) AS 'Top Salários'
-FROM funcionario
-GROUP BY Cod_Depto;
+Tras o primeiro registro de cada categoria 
+
+Select * from curso_teste
+group by cat_curso;
+
+Select cat_curso,count(*) from curso_teste
+group by cat_curso;
+
+Select cat_curso,count(*) as Quantidade from curso_teste
+group by cat_curso
+order by 2;
+
+Select cat_curso,count(*) as Quantidade from curso_teste
+group by cat_curso
+order by Quantidade;
+
+Select cat_curso,count(*) as Quantidade from curso_teste
+group by cat_curso
+order by Quantidade desc;
 
 
-SELECT Cod_Depto, AVG(salario) AS 'Top Salários'
-FROM funcionario
-GROUP BY Cod_Depto;
+select cat_curso, max(ch_curso)
+from curso_teste
+group by cat_curso;
 
-SELECT Cod_Depto, AVG(salario) AS 'Média de Salários''
-FROM funcionario
-GROUP BY Cod_Depto
-WHERE localidade = 'SP' or localidade = 'RJ'
-order by Cod_depto; 
+select cat_curso, min(ch_curso)
+from curso_teste
+group by cat_curso;
 
 
-SELECT Cod_Depto AS 'Departamento', AVG(salario) AS 'Média de Salários'
-FROM funcionario
-GROUP BY Cod_Depto
-WHERE localidade = 'SP' or localidade = 'RJ'
-order by AVG(salario) DESC; 
+select cat_curso, avg(ch_curso)
+from curso_teste
+group by cat_curso;
+
+
+select cat_curso, format(avg(ch_curso),2)
+from curso_teste
+group by cat_curso;
+
+
+
+
+
+
+
+
+
