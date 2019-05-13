@@ -1,26 +1,29 @@
-use dbfuncionario;
+update curso_teste
 
-UPDATE funcionario 
-SET Cod_Local = 3;
+SET
 
-
-UPDATE <tabela>
-SET <campo1>= <valor>,
-    <campo2> = <valor,
-    ...
-[WHERE <condicao>];
+cat_curso='Informatica' 
+where cod_curso=1;
 
 
-UPDATE <tabela>
-SET <campo1> = (SELECT <campo>
-               FROM <tabela2>
-               WHERE <condicao)
-[WHERE <condicao>];
+Adicionar o Campo
+
+alter table aluno_teste 
+
+add cod_curso smallint(4);
+
+Informar que este campo é a chave estrangeira
+
+alter table aluno_teste
+
+ADD foreign key (cod_curso)
+
+references curso_teste(cod_curso);
 
 
-UPDATE table1, table2, ... 
-SET column1 = expression1,
-    column2 = expression2,
-    ...
-WHERE table1.column = table2.column
-AND conditions;
+
+update aluno_teste
+
+SET
+
+cod_curso=1 where cod_aluno=2;
