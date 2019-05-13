@@ -1,35 +1,24 @@
 
+Select * from curso_teste
+where nome_curso like '%software%';
 
-use dbFuncionario;
+Select * from curso_teste
+where nome_curso not like '%software%';
 
-SELECT nome
-FROM funcionario
-WHERE nome LIKE 'A%';
+Select * from curso_teste
+where nome_curso like 'a%';
 
-SELECT nome
-FROM funcionario
-WHERE nome LIKE '%Costa%';
+Select * from curso_teste
+where nome_curso like '%marketing';
 
-SELECT nome
-FROM funcionario
-WHERE nome LIKE 'Barbosa%';
 
-SELECT nome
-FROM funcionario
-WHERE nome LIKE '%Sou_a%';
+Select * from curso_teste
+where nome_curso not like '%software%' and cat_curso='tecnologia';
 
-SELECT nome
-FROM funcionario
-WHERE nome NOT LIKE 'Ana%';
+select * from curso_teste
+where cat_curso like 'tecnolo_ia';
 
-SELECT nome, salario
-FROM funcionario
-WHERE nome NOT LIKE 'Ana%' and salario between 1000 and 2000;
-order by salario desc
 
-use dbpaciente; 
 
-select nome, ocorrencia
-from paciente 
-where ocorrencia like '%c_lica%' and idade >=18
-order by idade ASC; 
+
+
