@@ -1,0 +1,63 @@
+Verificar a tabela funcionarios
+
+Criar a tabela de localidade com chave primaria
+
+create table localidade(
+id_local tinyint NOT Null,
+
+cidade_local varchar(50),
+
+sigla_local char(2),
+
+primary key (id_local)
+);
+
+create table dependente(
+id_dep tinyint NOT Null,
+
+nome_dep varchar(50),
+
+status_dep  varchar(15),
+
+primary key (id_dep)
+);
+
+
+create table cargo(
+id_cargo tinyint NOT Null,
+
+nome_cargo varchar(50));
+
+
+insert into cargo
+values
+(1,'Diretor'),
+(2,'Vice-Diretor'),
+(3,'Gerente Senior'),
+(4,'Gerente Junior'),
+(5,'Programador'),
+(6,'Assistente Fiscal'),
+(7,'Operador');
+
+
+insert into localidade 
+values
+(1,'SÃO PAULO','SP'),
+(2,'RIO DE JANEIRO','RJ'),
+(3,'CURITIBA','PR'),
+(4,'FLORIANÓPOLIS','SC'),
+(5,'PORTO ALEGRE','RS'),
+(6,'BELO HORIZONTE','MG');
+
+
+
+
+
+
+
+
+
+
+
+
+
