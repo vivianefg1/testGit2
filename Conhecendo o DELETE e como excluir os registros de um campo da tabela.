@@ -1,13 +1,25 @@
+Exportar a tabela Aluno_teste
 
-DELETE * from paciente;
+Importar a mesma tabela com o nome Aluno_Teste2
+
+truncate table aluno_Teste2;
+
+Repetir a mesma ação para o arquivo Curso_Teste (Exportar e Importar)
+
+acessar o command line e executar o comando delete
+
+voltar ao Workbench e exibir o resultado da ação. 
+
+use alunos;
+
+show tables;
+
+select * from curso_teste2 
+
+delete from curso_teste2 where cat_curso='Tecnologia';
 
 
-DELETE * 
-from paciente
-WHERE status = 'leve';
 
-DELETE FROM paciente
-ORDER BY Codigo DESC
-LIMIT 1;
+
 
 
