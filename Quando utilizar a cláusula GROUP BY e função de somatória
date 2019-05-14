@@ -1,0 +1,22 @@
+
+select cat_curso, sum(ch_curso)
+from curso_teste
+group by cat_curso;
+
+
+select cat_curso, count(*),max(ch_curso), min(ch_curso),sum(ch_curso),format(avg(ch_curso),2)
+from curso_teste
+group by cat_curso;
+
+select cat_curso, count(*),max(ch_curso), min(ch_curso),sum(ch_curso),format(avg(ch_curso),2)
+from curso_teste
+where cat_curso<>'tecnologia'
+group by cat_curso
+order by cat_curso;
+
+
+
+
+
+
+
