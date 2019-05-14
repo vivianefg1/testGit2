@@ -1,20 +1,26 @@
+Acessar a tabela de funcionario e definir os campos de foreign key
 
-use dbfuncionario;
+describe  funcionario;
+    
 
-select * From localidade;
 
-select * from funcionario;
+alter table dependente
+add column cod_func smallint(6);
 
-select * from departamento;
 
-select cod_localidade, funcionario
-from funcionario 
-where cod_localidade=3;
+alter table dependente
+add foreign key(cod_func)
+references funcionario(id_func);
 
-select cod_localidade, count(*) 
-from funcionario
-group by cod_localidade;
 
-*** Inserir registros novos em ambas as tabelas e efetuar as mesmas consultas na sequência   
-    Preparando o aluno para a próxima aula. 
+
+alter table funcionario
+add foreign key(id_localidade)
+references localidade(id_local);
+
+
+alter table funcionario
+add foreign key(id_cargo)
+references cargo(id_cargo);
+
 
