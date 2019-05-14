@@ -1,0 +1,23 @@
+select * 
+from dependente
+right join funcionario
+on dependente.cod_func = funcionario.id_func;
+
+
+select nome_func 
+from dependente
+right join funcionario
+on dependente.cod_func = funcionario.id_func;
+
+
+
+select distinct  nome_func 
+from dependente
+right join funcionario
+on dependente.cod_func = funcionario.id_func;
+
+
+select distinct dependente.nome_dep,funcionario.nome_func 
+from dependente
+right join funcionario
+on dependente.cod_func = funcionario.id_func;
