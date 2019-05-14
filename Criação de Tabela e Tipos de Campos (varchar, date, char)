@@ -7,3 +7,4 @@ nome varchar(40) NOT NULL,
 email varchar(50),
 nascimento date
 );
+ 
