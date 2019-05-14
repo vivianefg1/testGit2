@@ -1,0 +1,10 @@
+
+Select cat_curso,count(*) as Quantidade from curso_teste
+group by cat_curso
+having count(*) <10;
+
+
+Select cat_curso,sum(ch_curso) as Quantidade from curso_teste
+group by cat_curso
+having sum(ch_curso)<=20;
+
