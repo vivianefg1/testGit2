@@ -1,6 +1,6 @@
 Acessar a tabela de funcionario e definir os campos de foreign key
 
-describe  funcionario;
+describe  funcionario; 
     
 
 
